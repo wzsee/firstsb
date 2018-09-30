@@ -1,0 +1,40 @@
+
+server:
+  port: 7777
+#  ssl:
+#    key-store: .keystore
+#    key-store-password: Weizeng88!
+#    key-store-type: JKS
+#    key-alias: tomcat
+student:
+  name:weizeng
+  age:22
+spring:
+  http:
+    encoding:编码
+  profiles:
+#  不同的环境 用不同的配置
+#    active: dev
+#    模板引擎
+  thymeleaf:
+    encoding: utf-8
+    prefix: classpath:/templates/
+    suffix: .html
+    cache: false
+#    热启动
+  devtools:
+    restart:
+      enabled: true
+      additional-paths: src/main/java
+      exclude: static/**
+#      数据库配置
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/test?characterEncoding=UTF-8
+    username: root
+    password: Weizeng88!
+    driver-class-name: com.mysql.jdbc.Driver
+
+#    mybatis配置
+mybatis:
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  config-location: classpath:mybatis/mybatis-config.xml

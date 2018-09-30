@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Spring Boot</title>
+</head>
+<body>
+  <div th:object="${person}">
+      <div th:text="*{name}"></div>
+      <div th:text="*{password}"></div>
+      <div th:text="*{date}"></div>
+  </div>
+</body>
+</html>
