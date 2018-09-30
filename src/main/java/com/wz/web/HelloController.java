@@ -31,7 +31,7 @@ public class HelloController {
     @RequestMapping("/hello")
     public String hello(Model model){
         model.addAttribute("now", DateFormat.getDateInstance().format(new Date()));
-        return "hello";
+        return "hello111";
     }
     @RequestMapping("/index")
     public String index(Model model){
