@@ -37,7 +37,7 @@ public class HelloController {
     public String index(Model model){
         Person person = new Person();
         person.setName("weizeng");
-        person.setPassword("test004");
+        person.setPassword("test005");
         person.setDate(new Date());
         model.addAttribute(person);
         return "index";
